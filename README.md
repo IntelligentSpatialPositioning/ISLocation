@@ -42,6 +42,7 @@ The specified training UUID needs to be used when instantiating ISLocation withi
 (Note that `a2873c78-1fa5-3ea6-61e1-92e345d305ba` should be replaced with the training UUID you want to use)
 
 ```objective-c
+#import <ISLocation/ISLocation.h>
 NSUUID *token = [[NSUUID alloc] initWithUUIDString:@"a2873c78-1fa5-3ea6-61e1-92e345d305ba"];
 _location = [[ISLocation alloc] initWithToken:token delegate:self];
 ```
